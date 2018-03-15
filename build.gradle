@@ -1,0 +1,24 @@
+buildscript {
+	apply from: '../pal-gradle/version.gradle'
+}
+
+apply from: rootProject.file('../pal-gradle/version.gradle')
+apply from: rootProject.file('../pal-gradle/scala.gradle')
+
+sourceSets {
+	main {
+		resources {
+			srcDirs += file('src/main/scala')
+		}
+	}
+}
+
+dependencies {
+	compileOnly gradleApi()
+	compile "com.peterlavalle:gbt:${pal.peterVersion}"
+	compile "com.peterlavalle:phile_${pal.scalaFlavour}:${pal.peterVersion}"
+
+	// https://github.com/spullara/mustache.java
+	compile 'com.github.spullara.mustache.java:compiler:0.9.5'
+
+}
