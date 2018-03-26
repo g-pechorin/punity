@@ -1,12 +1,12 @@
 package peterlavalle.punity
 
 import peterlavalle.Later
-import peterlavalle.gbt.{Content, TProperTask}
+import peterlavalle.gbt.TProperTask
 
 class UEdutorTestsTask extends TProperTask.TTaskSingle(
 	"verification",
 	"runs any/all editor tests"
-) with Unity.T with Content with Later.T {
+) with Unity.T with Later.T {
 
 	dependsOn[UAssumblyEditorTask]
 	dependsOn[UAssumblyPluginTask]

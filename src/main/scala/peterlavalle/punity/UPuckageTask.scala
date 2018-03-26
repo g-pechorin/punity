@@ -3,12 +3,12 @@ package peterlavalle.punity
 import java.io.File
 
 import peterlavalle.Later
-import peterlavalle.gbt.{Content, TProperTask}
+import peterlavalle.gbt.TProperTask
 
 class UPuckageTask extends TProperTask.TTaskSingle(
 	"publishing",
 	"builds a package from assets below our project name"
-) with Unity.T with Content with Later.T {
+) with Unity.T with Later.T {
 
 	// https://docs.unity3d.com/Manual/CommandLineArguments.html
 

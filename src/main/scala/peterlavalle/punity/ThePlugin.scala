@@ -5,12 +5,12 @@ import javax.inject.Inject
 import org.gradle.api.internal.file.SourceDirectorySetFactory
 import org.gradle.api.plugins.JavaPlugin
 import org.gradle.api.publish.maven.plugins.MavenPublishPlugin
-import peterlavalle.gbt.{APlugin, Content}
+import peterlavalle.gbt.APlugin
 
 class ThePlugin @Inject()
 (
 	sourceDirectorySetFactory: SourceDirectorySetFactory
-) extends APlugin(sourceDirectorySetFactory) with Content {
+) extends APlugin(sourceDirectorySetFactory) {
 
 	plugin[JavaPlugin]
 	plugin[MavenPublishPlugin]

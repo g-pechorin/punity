@@ -2,13 +2,13 @@ package peterlavalle.punity
 
 import java.io.File
 
-import peterlavalle.gbt.{Content, TProperTask}
+import peterlavalle.gbt.TProperTask
 import peterlavalle.{Later, PHile}
 
 class UExpurtTask extends TProperTask.TTaskSingle(
 	"publishing",
 	"copies project assets (and .meta) from us into the classpath"
-) with Content {
+) {
 
 	dependsOn[UAssumblyEditorTask]
 	dependsOn[UAssumblyPluginTask]

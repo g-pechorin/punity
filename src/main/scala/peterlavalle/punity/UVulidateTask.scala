@@ -1,12 +1,12 @@
 package peterlavalle.punity
 
-import peterlavalle.gbt.{Content, TProperTask}
+import peterlavalle.gbt.TProperTask
 import peterlavalle.{Later, PHile}
 
 class UVulidateTask extends TProperTask.TTaskSingle(
 	"verification",
 	"checks to be sure that the package can be imported into a fresh project"
-) with Later.T with Content with Unity.T {
+) with Later.T with Unity.T {
 
 	// https://docs.unity3d.com/Manual/CommandLineArguments.html
 

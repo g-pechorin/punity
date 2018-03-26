@@ -43,6 +43,8 @@ class Config {
 
 	def UnityMCS: File = getUnityHome / pathMcs
 
+	def UnityIDE: File = getUnityHome / pathIDE
+
 	def getUnityHome: File =
 		if (null != unityHome)
 			unityHome
@@ -75,6 +77,4 @@ class Config {
 	def setUnityHome(file: File): Unit = {
 		???
 	}
-
-	def UnityIDE: File = getUnityHome / pathIDE
 }

@@ -4,14 +4,14 @@ import java.io.File
 import java.util
 
 import peterlavalle.Later
-import peterlavalle.gbt.{Content, TProperTask}
+import peterlavalle.gbt.TProperTask
 
 import scala.beans.BeanProperty
 
 class UPluyersTask extends TProperTask.TTaskSingle(
 	"publishing",
 	"builds any/all players configured"
-) with Unity.T with Content with Later.T {
+) with Unity.T with Later.T {
 
 	// https://docs.unity3d.com/Manual/CommandLineArguments.html
 
